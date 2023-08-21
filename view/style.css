@@ -1,0 +1,83 @@
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+div[id$=ajaxsearch]{
+    display : inline-block;
+    position: relative;
+}
+
+div[id$=searchForIngr]{
+  display : inline-block;
+  position: relative;
+}
+
+div.results {
+    position : absolute;
+    z-index : 1;
+    top : 2em;
+    width : 100%;
+    padding : 5px;
+    box-sizing: border-box;
+    background-color: azure;
+    border : 1px solid gray;
+    display : none;
+  }
+  
+  div.results div.result:hover {
+    background-color : rgb(162, 160, 165);
+    color : black;
+    cursor : pointer;
+  }
+  #formlog{
+    max-width:500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  img{
+    width: 200px;
+  }
+  .popup{
+    width: 100%;
+    background-color: rgb(193, 194, 196);
+    position:static;
+    top:0%;
+    left:50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility:hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .openPopup{
+    visibility:visible;
+    top:50%;
+    transform: translate(-2%,-50%) scale(0.7);
+    transition: transform 0.4s, down 0.4s;
+  }
+.img-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-container img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+#filter-form{
+  display:none;
+}
+.sticky-top {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 1;
+}
+  
